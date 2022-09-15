@@ -4,7 +4,7 @@
   "description": "Sass portfolio website with bootstrap 5",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass":"sass --watch scss:assets/css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Nabeel-Chhipa/Sass-portfolio-site/issues"
   },
-  "homepage": "https://github.com/Nabeel-Chhipa/Sass-portfolio-site#readme"
+  "homepage": "https://github.com/Nabeel-Chhipa/Sass-portfolio-site#readme",
+  "devDependencies": {
+    "sass": "^1.54.9"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "autoprefixer": "^10.4.11",
+    "bootstrap": "^5.2.1",
+    "postcss-cli": "^10.0.0"
+  }
 }
