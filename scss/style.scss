@@ -1,5 +1,1 @@
- $primary: #999;
-
- .test-1 {
-    color: $primary;
- }
+@use 'custom';
