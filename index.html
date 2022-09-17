@@ -8,11 +8,14 @@
     <title>Learning Sass with bootstrap 5</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- NAVBAR START -->
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo">
@@ -50,6 +53,59 @@
             </div>
         </div>
     </nav>
+    <!-- NAVBAR START -->
+
+    <!-- INTRO SECTION START -->
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+                <div class="col-md-6 intros">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">Hi!, I'm Nabeel</span>
+                        <span class="display-2--description lh-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis architecto nemo
+                            voluptatem atque tempora.
+                        </span>
+                    </h1>
+                    <button type="button" class="rounded-pill btn-rounded">Get in Touch
+                        <span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                        <img src="images/arts/intro-section-illustration.png" alt="video" class="img-fluid" />
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span>
+                                <i class="fas fa-play-circle"></i>
+                            </span>
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1"
+                d="M0,128L48,149.3C96,171,192,213,288,218.7C384,224,480,192,576,149.3C672,107,768,53,864,58.7C960,64,1056,128,1152,149.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- INTRO SECTION END -->
+
+    <script src="assets/vendors/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://youtu.be/xcJtL7QggTI',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            'autoplay': 'true'
+        });
+    </script>
 
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
